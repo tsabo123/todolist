@@ -1,0 +1,145 @@
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family:  sans-serif;
+	
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	
+	
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+
+}
+body {
+	display: flex;
+	flex-direction: column;
+	background: gainsboro;
+	color: black;
+
+}
+.container {
+	display: flex;
+	justify-content: center;
+	margin-inline: auto;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	max-width: 770px;
+   background-color: #fff;
+   padding: 60px;
+   
+   
+}
+header {
+	
+}
+header h1 {
+	font-size: 46px;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 16px;
+}
+#new-task-form{
+	display: flex;
+	
+	
+}
+input, button {
+	
+
+	outline: none;
+    border: none;
+	background: none;
+}
+button{
+	border: none;
+}
+#new-task-input {
+	flex: 1 0 0%;
+	
+	padding: 16px;
+	border-radius: 5px;
+	margin-right: 16px;
+	width: 800px;
+	background: gainsboro;
+	font-size: 20px;
+	color: gray;
+}
+	
+#new-task-submit {
+	background-color: #57C5C9;
+	color: #fff;
+	width: 100px;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	border: none;
+}
+main{
+	flex: 1 1 0%;
+	
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+.task-list {
+ padding-top: 16PX;
+	
+}
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 0px ;
+	background: #fff;
+	border-top: 1px solid gray !important;
+	align-items: baseline;
+   
+	
+}
+
+#tasks .task .content .text {
+	font-size: 18px;
+	color: gray;
+	
+	width: 100%;
+	display: block;
+
+	
+}
+.task .actions .edit {
+	cursor: pointer;
+	font-size: 16px;
+	color:#fff;
+	font-weight: 400;
+	background: #57C5C9;
+	width: 100px;
+	height: 35px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-left: 160px;
+	align-items: end;
+}
+.task .actions .delete {
+	cursor: pointer;
+	font-size: 16px;
+	color:#fff;
+	font-weight: 400;
+	background: red;
+	width: 100px;
+	height: 35px;
+	border-radius: 5px;
+	padding: 10px;
+	
+	margin-left: 16px;
+}
+
