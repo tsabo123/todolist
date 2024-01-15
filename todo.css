@@ -51,7 +51,7 @@ header h1 {
 }
 #new-task-form{
 	display: flex;
-	
+	flex: 1 0 0%;
 	
 }
 input, button {
@@ -84,6 +84,7 @@ button{
 	font-size: 20px;
 	cursor: pointer;
 	border: none;
+	
 }
 main{
 	flex: 1 1 0%;
@@ -103,43 +104,46 @@ main{
 	background: #fff;
 	border-top: 1px solid gray !important;
 	align-items: baseline;
-   
-	
+    padding-left: 30px;
+	padding-right: 30px;
 }
 
 #tasks .task .content .text {
 	font-size: 18px;
 	color: gray;
-	
+	padding-left: 0;
 	width: 100%;
-	display: block;
-
-	
+	margin: 0;
+    
 }
-.task .actions .edit {
+.task .actions .save {
 	cursor: pointer;
 	font-size: 16px;
 	color:#fff;
 	font-weight: 400;
 	background: #57C5C9;
-	width: 100px;
+	width: 120px;
 	height: 35px;
 	border-radius: 5px;
 	padding: 10px;
-	margin-left: 160px;
-	align-items: end;
+	
+
+	display: none;
 }
-.task .actions .delete {
+.task .actions .remove {
 	cursor: pointer;
 	font-size: 16px;
 	color:#fff;
 	font-weight: 400;
 	background: red;
-	width: 100px;
+	width: 120px;
 	height: 35px;
 	border-radius: 5px;
 	padding: 10px;
+	margin-left: 18px;
 	
-	margin-left: 16px;
+	
+	
+	
 }
 
