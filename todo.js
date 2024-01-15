@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
         const task_save_el = document.createElement('button');
         task_save_el.classList.add('save');
         task_save_el.innerText = 'Save';
-        task_save_el.style.display = 'none'; // Initially hide the save button
+        task_save_el.style.display = 'none'; 
 
         const task_remove_el = document.createElement('button');
         task_remove_el.classList.add('remove');
@@ -50,7 +50,6 @@ window.addEventListener('load', () => {
 
         input.value = '';
 
-        // Toggle save button on task text click
         task_input_el.addEventListener('click', () => {
             task_input_el.removeAttribute("readonly");
             task_save_el.style.display = 'inline-block';
