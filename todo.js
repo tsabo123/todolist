@@ -6,8 +6,9 @@ window.addEventListener('load', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const task = input.value;
+        const task = input.value.trim();
 
+       if (task !== '') {
         const task_el = document.createElement('div');
         task_el.classList.add('task');
 
@@ -52,7 +53,7 @@ window.addEventListener('load', () => {
 
         task_input_el.addEventListener('click', () => {
             task_input_el.removeAttribute("readonly");
-            task_save_el.style.display = 'inline-block';
+            task_save_el.style.display = 'inline-block'
             task_input_el.focus();
         });
 
@@ -63,6 +64,10 @@ window.addEventListener('load', () => {
 
         task_remove_el.addEventListener('click', (e) => {
             list_el.removeChild(task_el);
-        });
+        });}
+        else {
+            
+            window.alert("Please type some task");
+        }
     });
 });
